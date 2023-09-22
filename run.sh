@@ -11,5 +11,8 @@ fi
 
 php composer.phar install
 code . src/Controller/DefaultController.php templates/default/index.html.twig
-./symfony serve
+./symfony serve &
+sleep 5
+firefox http://localhost:8000
+fg
 
