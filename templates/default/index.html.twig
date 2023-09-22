@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block body %}
+<h1>Hello</h1>
+
+<p>
+    La date actuelle est: {{ date() | date('Y-m-d H:i:s') }}
+</p>
+<p>
+    N'hésitez pas à modifier le fichier <code>templates/default/index.html.twig</code> pour jouer!
+</p>
+
+<script>
+// Recharge la page (pour le stress-test)
+setTimeout(function() {
+    window.location.reload()
+}, 3000);
+</script>
+{% endblock %}
