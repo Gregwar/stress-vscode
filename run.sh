@@ -13,6 +13,6 @@ php composer.phar install
 code . src/Controller/DefaultController.php templates/default/index.html.twig
 ./symfony serve &
 sleep 10
-firefox http://localhost:8000
+firefox-esr http://localhost:8000
 fg
 
